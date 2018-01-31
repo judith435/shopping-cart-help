@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="file-app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src='../node_modules/angular/angular.min.js'></script>
+    <script src='app.js'></script>
+</head>
+<body>
+    <div ng-controller="upload">
+        <input ng-model="file.name" type="text" name="title">
+        <input ng-model="file.content" type="file" name="file">
+        <button ng-click="sendFile()">send</button>
+    </div>
+</body>
+</html>
